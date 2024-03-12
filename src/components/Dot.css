@@ -1,0 +1,23 @@
+.stars {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  @keyframes moveStars {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-100vh);
+    }
+  }
+  
+  .stars {
+    animation: moveStars 10s linear infinite;
+  }
+  
